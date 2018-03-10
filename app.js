@@ -3,7 +3,7 @@ var gifs = ["guitar", "saxaphone", "violin", "piano","cello","flute","tuba","cym
 function searchGiphy() {
 
     var gif = $(this).attr("data-name");
-    var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + gif + "&api_key=dWrzYW0BDnzwozrf1PSoC64gqeYLPSby&limit=10";
+    var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + gif + "&api_key=dWrzYW0BDnzwozrf1PSoC64gqeYLPSby&limit=10";
 
     $.ajax({
         url: queryURL,
